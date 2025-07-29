@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Maincontainer {
+  max-width: 500px;
+  background-color: #bbe5ed;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 25px auto;
+}
+
+.wrapper input{
+  border: none;
+  outline: none;
+  color: chocolate;
+  padding: 10px;
+}
+
+.wrapper form input{
+  margin-bottom: 8px;
+}
+
+.Maincontainer .button-one{
+  border: none;
+  background-color: #406540;
+  /* padding: 0px 5px; */
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.Maincontainer .button-two{
+  border: none;
+  background-color: #989a65;
+  /* padding: 0px 5px; */
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  margin-left: 4px;
+}
+
+.Maincontainer .button-three{
+  border: none;
+  background-color: #c22b2b;
+  /* padding: 0px 5px; */
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  margin-left: 4px;
+}
+
+.wrapper2{
+  max-width: fit-content;
+  border: 1px solid #0000;
+  padding: 2px;
+  border-radius: 4px;
+  background-color: #6b7476;
+  color: orange;
+  margin-top: 5px;
+}
+.wrapper2 p{
+  margin: 0px;
+}
+
+@keyframes fujhadiVibrate {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  50% { transform: translateX(2px); }
+  75% { transform: translateX(-2px); }
+  100% { transform: translateX(0); }
+}
+
+.vibrate {
+  animation: fujhadiVibrate 0.3s linear infinite;
+}
+
+@keyframes fujhadiGlow {
+  0% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #0ff, 0 0 15px #0ff;
+  }
+  50% {
+    box-shadow: 0 0 10px #fff, 0 0 20px #0ff, 0 0 30px #0ff;
+  }
+  100% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #0ff, 0 0 15px #0ff;
+  }
+}
+
+.glow {
+  animation: fujhadiGlow 1s ease-in-out infinite;
+}
+
+@keyframes fujhadiPop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.pop {
+  animation: fujhadiPop 2s ease-in-out infinite;
+}
+
+.button-one:hover {
+  animation: fujhadiPop 0.5s ease-in-out infinite;
+}
